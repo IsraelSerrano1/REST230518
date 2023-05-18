@@ -1,0 +1,23 @@
+<h1>Medicos en plantilla</h1>
+
+<table>
+  <tr>
+    <th>ID MÉDICO:</th>
+
+    <th>DNI:</th>
+
+    <th>NOMBRE:</th>
+
+    <th>EDAD:</th>
+  </tr>
+
+  <tr *ngFor="let elemento of medicos">
+    <td>{{ elemento.idMedico }}</td>
+
+    <td>{{ elemento.dni }}</td>
+
+    <td>{{ elemento.nombre }}</td>
+
+    <td>{{ elemento.edad }}</td>
+  </tr>
+</table>
