@@ -16,8 +16,8 @@ public class MedicoControlador {
     @Autowired
     private IMedicoServicio servicio;
 
-@GetMapping
-public List<Medico> listarMedicos(){
-    return List.of(servicio.listar());
-}
+    @GetMapping
+    public List<Medico> listarMedicos(){
+        return servicio.listar();
+    }
 }
